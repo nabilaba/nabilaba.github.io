@@ -1,5 +1,6 @@
 import { Flex, HStack, Icon, Text, useColorModeValue } from "@chakra-ui/react";
 import { FaJs, FaReact, FaSass } from "react-icons/fa";
+import { Link as LinkTo } from "react-router-dom";
 
 const HeaderContent = () => (
   <Flex
@@ -22,6 +23,8 @@ const HeaderContent = () => (
 
 const HeaderItem = ({ icon, label, color }) => (
   <HStack
+    as={LinkTo}
+    to={`/${label}`}
     color={useColorModeValue("gray.500", "gray.400")}
     spacing={1}
     align="center"
