@@ -1,5 +1,6 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import BaseOutlet from "./layout/BaseOutlet";
+import Certificates from "./pages/Certificates";
 import Educations from "./pages/Educations";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
@@ -13,6 +14,7 @@ export default function App() {
         <Route path="skills" element={<Skills />} />
         <Route path="projects" element={<Projects />} />
         <Route path="educations" element={<Educations />} />
+        <Route path="certificates" element={<Certificates />} />
       </Route>
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>

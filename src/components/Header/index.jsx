@@ -1,6 +1,7 @@
 import { Flex, HStack, Icon, Text, useColorModeValue } from "@chakra-ui/react";
 import { FaJs, FaReact, FaSass, FaTimes } from "react-icons/fa";
 import { Link as LinkTo, useLocation, useNavigate } from "react-router-dom";
+import { VscJson } from "react-icons/vsc";
 
 const HeaderContent = () => {
   const location = useLocation();
@@ -28,7 +29,7 @@ const HeaderContent = () => {
       borderRightWidth={2}
       borderRightColor={useColorModeValue("gray.50", "gray.800")}
       _hover={{ color: useColorModeValue("gray.700", "white") }}
-      px="3"
+      px="4"
     >
       <HStack as={LinkTo} to={`/${label}`} spacing={1} align="center" h="full" py="2">
         {icon && <Icon boxSize="5" as={icon} color={color} />}
@@ -81,6 +82,12 @@ const HeaderContent = () => {
           extension=".sass"
           label="educations"
           color="pink.500"
+        />
+        <HeaderItem
+          icon={VscJson}
+          extension=".json"
+          label="certificates"
+          color="green.500"
         />
       </HStack>
     </Flex>
