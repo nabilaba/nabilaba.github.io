@@ -14,14 +14,14 @@ const HeaderContent = () => (
     top="0"
   >
     <HStack spacing={1} h="full">
-      <HeaderItem icon={FaJs} label="skills.js" color="yellow.500" />
-      <HeaderItem icon={FaReact} label="projects.jsx" color="blue.500" />
-      <HeaderItem icon={FaSass} label="educations.sass" color="pink.500" />
+      <HeaderItem icon={FaJs} extension=".js" label="skills" color="yellow.500" />
+      <HeaderItem icon={FaReact} extension=".jsx" label="projects" color="blue.500" />
+      <HeaderItem icon={FaSass} extension=".sass" label="educations" color="pink.500" />
     </HStack>
   </Flex>
 );
 
-const HeaderItem = ({ icon, label, color }) => (
+const HeaderItem = ({ icon, label, color, extension }) => (
   <HStack
     as={LinkTo}
     to={`/${label}`}
@@ -40,7 +40,7 @@ const HeaderItem = ({ icon, label, color }) => (
     px="3"
   >
     {icon && <Icon boxSize="5" as={icon} color={color} />}
-    {label && <Text>{label}</Text>}
+    {label && <Text>{label}{extension}</Text>}
   </HStack>
 );
 
