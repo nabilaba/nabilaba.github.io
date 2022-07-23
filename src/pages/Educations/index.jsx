@@ -3,7 +3,7 @@ import { Heading, ListItem, Stack, UnorderedList, useColorModeValue } from "@cha
 const Educations = () => (
   <Stack spacing={5} h="full" p={5}>
     <Heading color="blue.500" fontSize="xl">
-      My education background
+      My educational background
     </Heading>
     <Stack spacing={5} color={useColorModeValue("gray.600", "gray.400")}>
       <UnorderedList spacing={4} stylePosition="inside" ml={8}>
