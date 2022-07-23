@@ -7,6 +7,7 @@ import {
   VStack,
   IconButton,
   Divider,
+  Link,
 } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { RiFlashlightFill } from "react-icons/ri";
@@ -14,7 +15,6 @@ import { FaTelegramPlane, FaLinkedin } from "react-icons/fa";
 import { GoMarkGithub } from "react-icons/go";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { TiSocialInstagram } from "react-icons/ti";
-import { SiDiscord } from "react-icons/si";
 
 const SidebarContent = (props) => (
   <Box
@@ -54,12 +54,11 @@ const SidebarContent = (props) => (
           color="gray.600"
           aria-label="Main Navigation"
         >
-          <NavItem icon={FaTelegramPlane} />
-          <NavItem icon={GoMarkGithub} />
-          <NavItem icon={FaLinkedin} />
-          <NavItem icon={IoLogoWhatsapp} />
-          <NavItem icon={TiSocialInstagram} />
-          <NavItem icon={SiDiscord} />
+          <NavItem icon={FaTelegramPlane} url="https://t.me/nabilaba" />
+          <NavItem icon={GoMarkGithub} url="https://github.com/nabilaba" />
+          <NavItem icon={FaLinkedin} url="https://www.linkedin.com/in/nabilaba/" />
+          <NavItem icon={IoLogoWhatsapp} url="https://wa.me/6283146542084" />
+          <NavItem icon={TiSocialInstagram} url="https://instagram.com/nabil_aba" />
         </Flex>
       </Box>
 
@@ -95,9 +94,12 @@ const SidebarContent = (props) => (
 const NavItem = (props) => {
   const color = useColorModeValue("gray.600", "gray.300");
 
-  const { icon } = props;
+  const { icon, url } = props;
   return (
     <Flex
+      as={Link}
+      href={url}
+      target="_blank"
       align="center"
       px="2"
       py="4"
