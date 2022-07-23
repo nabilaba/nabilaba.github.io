@@ -55,6 +55,11 @@ const SidebarContent = (props) => (
           size={"sm"}
           name="Nabil"
           src="https://avatars.githubusercontent.com/u/45154878?v=4"
+          filter="grayscale(100%)"
+          cursor={"pointer"}
+          _hover={{
+            filter: "grayscale(0%)",
+          }}
         />
         <IconButton
           mt="4"
