@@ -1,47 +1,90 @@
 import { Flex, HStack, Icon, Text, useColorModeValue } from "@chakra-ui/react";
-import { FaJs, FaReact, FaSass } from "react-icons/fa";
-import { Link as LinkTo } from "react-router-dom";
+import { FaJs, FaReact, FaSass, FaTimes } from "react-icons/fa";
+import { Link as LinkTo, useLocation, useNavigate } from "react-router-dom";
 
-const HeaderContent = () => (
-  <Flex
-    as="header"
-    align="center"
-    w="full"
-    px="1"
-    borderColor={useColorModeValue("inherit", "gray.700")}
-    bg={useColorModeValue("white", "gray.900")}
-    position="sticky"
-    top="0"
-  >
-    <HStack spacing={1} h="full">
-      <HeaderItem icon={FaJs} extension=".js" label="skills" color="yellow.500" />
-      <HeaderItem icon={FaReact} extension=".jsx" label="projects" color="blue.500" />
-      <HeaderItem icon={FaSass} extension=".sass" label="educations" color="pink.500" />
+const HeaderContent = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const HeaderItem = ({ icon, label, color, extension }) => (
+    <HStack
+      color={
+        location.pathname === `/${label}`
+          ? useColorModeValue("gray.700", "white")
+          : useColorModeValue("gray.500", "gray.400")
+      }
+      bg={
+        location.pathname === `/${label}`
+          ? useColorModeValue("gray.100", "gray.800")
+          : "none"
+      }
+      spacing={3}
+      align="center"
+      role="group"
+      h="full"
+      fontSize={".75rem"}
+      cursor="pointer"
+      w="max-content"
+      borderRightWidth={2}
+      borderRightColor={useColorModeValue("gray.50", "gray.800")}
+      _hover={{ color: useColorModeValue("gray.700", "white") }}
+      px="3"
+    >
+      <HStack as={LinkTo} to={`/${label}`} spacing={1} align="center" h="full" py="2">
+        {icon && <Icon boxSize="5" as={icon} color={color} />}
+        {label && (
+          <Text>
+            {label}
+            {extension}
+          </Text>
+        )}
+      </HStack>
+      {location.pathname === `/${label}` && (
+        <Icon
+          boxSize="3"
+          as={FaTimes}
+          color={useColorModeValue("gray.400", "gray.500")}
+          _hover={{
+            color: useColorModeValue("gray.500", "gray.400"),
+          }}
+          onClick={() => navigate("/")}
+        />
+      )}
     </HStack>
-  </Flex>
-);
+  );
 
-const HeaderItem = ({ icon, label, color, extension }) => (
-  <HStack
-    as={LinkTo}
-    to={`/${label}`}
-    color={useColorModeValue("gray.500", "gray.400")}
-    spacing={1}
-    align="center"
-    role="group"
-    h="full"
-    fontSize={".75rem"}
-    cursor="pointer"
-    w="max-content"
-    borderRightWidth={2}
-    borderRightColor={useColorModeValue("gray.50", "gray.800")}
-    _hover={{ color: useColorModeValue("gray.700", "white") }}
-    py="2"
-    px="3"
-  >
-    {icon && <Icon boxSize="5" as={icon} color={color} />}
-    {label && <Text>{label}{extension}</Text>}
-  </HStack>
-);
+  return (
+    <Flex
+      as="header"
+      align="center"
+      w="full"
+      borderColor={useColorModeValue("inherit", "gray.700")}
+      bg={useColorModeValue("white", "gray.900")}
+      position="sticky"
+      top="0"
+    >
+      <HStack spacing={0} h="full">
+        <HeaderItem
+          icon={FaJs}
+          extension=".js"
+          label="skills"
+          color="yellow.500"
+        />
+        <HeaderItem
+          icon={FaReact}
+          extension=".jsx"
+          label="projects"
+          color="blue.500"
+        />
+        <HeaderItem
+          icon={FaSass}
+          extension=".sass"
+          label="educations"
+          color="pink.500"
+        />
+      </HStack>
+    </Flex>
+  );
+};
 
 export default HeaderContent;
