@@ -1,4 +1,5 @@
 import { Heading, Stack } from "@chakra-ui/react";
+import Title from "../../components/Title";
 
 const Projects = () => (
   <Stack
@@ -7,6 +8,7 @@ const Projects = () => (
     justifyContent="center"
     h="full"
   >
+    <Title title={`projects - Nabil Aba`} />
     <Heading>Projects</Heading>
   </Stack>
 );

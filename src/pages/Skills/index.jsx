@@ -1,8 +1,10 @@
 import { Heading, ListItem, Stack, useColorModeValue } from "@chakra-ui/react";
 import PagesItem from "../../components/PagesItem";
+import Title from "../../components/Title";
 
 const Skills = () => (
   <Stack spacing={5} h="full">
+    <Title title={`skills - Nabil Aba`} />
     <Heading color="blue.500" fontSize="xl">
       Technical Skills
     </Heading>

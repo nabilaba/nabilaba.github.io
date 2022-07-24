@@ -6,9 +6,11 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import PagesItem from "../../components/PagesItem";
+import Title from "../../components/Title";
 
 const Educations = () => (
   <Stack spacing={5} h="full">
+    <Title title={`educations - Nabil Aba`} />
     <Heading color="blue.500" fontSize="xl">
       My educational background
     </Heading>
