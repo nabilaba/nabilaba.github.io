@@ -7,7 +7,7 @@ const BaseOutlet = () => {
   return (
     <Box
       as="section"
-      bg={useColorModeValue("gray.50", "gray.800")}
+      bg={useColorModeValue("gray.50", "gray.700")}
       minH="100vh"
     >
       <SidebarContent colorMode={colorMode} toggleColorMode={toggleColorMode} />
