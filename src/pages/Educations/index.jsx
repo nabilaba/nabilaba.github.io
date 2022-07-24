@@ -1,33 +1,52 @@
-import { Heading, ListItem, Stack, UnorderedList, useColorModeValue } from "@chakra-ui/react";
+import {
+  Box,
+  Heading,
+  ListItem,
+  Stack,
+  useColorModeValue,
+} from "@chakra-ui/react";
+import PagesItem from "../../components/PagesItem";
 
 const Educations = () => (
   <Stack spacing={5} h="full">
     <Heading color="blue.500" fontSize="xl">
       My educational background
     </Heading>
-    <Stack spacing={5} color={useColorModeValue("gray.600", "gray.400")}>
-      <UnorderedList spacing={4} stylePosition="inside" ml={8}>
+    <Box color={useColorModeValue("gray.600", "gray.400")}>
+      <PagesItem>
         <ListItem>Universitas Muhammadiyah Surakarta</ListItem>
-        <UnorderedList spacing={1} stylePosition="inside" ml={16}>
+        <PagesItem>
           <ListItem>Information Technology</ListItem>
           <ListItem>2019 - Now</ListItem>
           <ListItem>IPK : 3.8</ListItem>
-        </UnorderedList>
+        </PagesItem>
+      </PagesItem>
+    </Box>
+    <Box color={useColorModeValue("gray.600", "gray.400")}>
+      <PagesItem>
         <ListItem>SMA Negeri 2 Sukoharjo</ListItem>
-        <UnorderedList spacing={1} stylePosition="inside" ml={16}>
+        <PagesItem>
           <ListItem>Language Class</ListItem>
           <ListItem>2016 - 2019</ListItem>
-        </UnorderedList>
+        </PagesItem>
+      </PagesItem>
+    </Box>
+    <Box color={useColorModeValue("gray.600", "gray.400")}>
+      <PagesItem>
         <ListItem>SMP Negeri 1 Grogol</ListItem>
-        <UnorderedList spacing={1} stylePosition="inside" ml={16}>
+        <PagesItem>
           <ListItem>2013 - 2016</ListItem>
-        </UnorderedList>
+        </PagesItem>
+      </PagesItem>
+    </Box>
+    <Box color={useColorModeValue("gray.600", "gray.400")}>
+      <PagesItem>
         <ListItem>SD Negeri 2 Tegalmade</ListItem>
-        <UnorderedList spacing={1} stylePosition="inside" ml={16}>
+        <PagesItem>
           <ListItem>2006 - 2013</ListItem>
-        </UnorderedList>
-      </UnorderedList>
-    </Stack>
+        </PagesItem>
+      </PagesItem>
+    </Box>
   </Stack>
 );
 

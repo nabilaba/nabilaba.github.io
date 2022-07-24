@@ -8,10 +8,9 @@ const MainContent = () => (
     transition=".3s ease"
     direction="column"
     h="100vh"
-    pb="25px"
   >
     <HeaderContent />
-    <Box as="main" bgColor={useColorModeValue("gray.100", "gray.800")} flex={1} p={10}>
+    <Box as="main" bgColor={useColorModeValue("gray.100", "gray.800")} flex={1} p={10} pb={"20"}>
       <Outlet />
     </Box>
   </Flex>
