@@ -129,9 +129,13 @@ const SidebarContent = (props) => {
             mt="4"
             size={"sm"}
             onClick={props.toggleColorMode}
-            variant="ghost"
+            variant="unstyled"
             icon={props.colorMode === "light" ? <MoonIcon /> : <SunIcon />}
-          ></IconButton>
+            color={useColorModeValue("gray.500", "gray.400")}
+            _hover={{
+              color: useColorModeValue("gray.700", "gray.200"),
+            }}
+          />
         </Flex>
       </VStack>
     </Box>
