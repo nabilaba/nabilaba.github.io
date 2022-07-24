@@ -64,4 +64,4 @@ const GoogleDigitalGarage = [
   },
 ];
 
-export default { Dicoding, GoogleDigitalGarage };
+export { Dicoding, GoogleDigitalGarage };
