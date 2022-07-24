@@ -13,7 +13,7 @@ const Educations = () => (
           <ListItem>2019 - Now</ListItem>
           <ListItem>IPK : 3.8</ListItem>
         </UnorderedList>
-        <ListItem>SMA Negeri 2 Surakarta</ListItem>
+        <ListItem>SMA Negeri 2 Sukoharjo</ListItem>
         <UnorderedList spacing={1} stylePosition="inside" ml={16}>
           <ListItem>Language Class</ListItem>
           <ListItem>2016 - 2019</ListItem>
