@@ -1,7 +1,7 @@
 import { Heading, ListItem, Stack, UnorderedList, useColorModeValue } from "@chakra-ui/react";
 
 const Educations = () => (
-  <Stack spacing={5} h="full" p={5}>
+  <Stack spacing={5} h="full">
     <Heading color="blue.500" fontSize="xl">
       My educational background
     </Heading>

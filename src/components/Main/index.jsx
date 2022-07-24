@@ -11,7 +11,7 @@ const MainContent = () => (
     pb="25px"
   >
     <HeaderContent />
-    <Box as="main" bgColor={useColorModeValue("gray.100", "gray.800")} flex={1}>
+    <Box as="main" bgColor={useColorModeValue("gray.100", "gray.800")} flex={1} p={10}>
       <Outlet />
     </Box>
   </Flex>
