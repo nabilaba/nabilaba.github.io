@@ -1,5 +1,5 @@
 import { Flex, HStack, Icon, Text, useColorModeValue } from "@chakra-ui/react";
-import { FaJs, FaReact, FaSass, FaTimes } from "react-icons/fa";
+import { FaJs, FaReact, FaSass, FaTimes, FaHtml5 } from "react-icons/fa";
 import { Link as LinkTo, useLocation, useNavigate } from "react-router-dom";
 import { VscJson } from "react-icons/vsc";
 
@@ -88,6 +88,12 @@ const HeaderContent = () => {
           extension=".json"
           label="certificates"
           color="green.500"
+        />
+        <HeaderItem
+          icon={FaHtml5}
+          extension=".html"
+          label="experiences"
+          color="red.500"
         />
       </HStack>
     </Flex>
