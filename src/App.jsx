@@ -6,8 +6,10 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import Experiences from "./pages/Experiences";
+import KeyboardEvent from "./utils/KeyboardEvent";
 
 export default function App() {
+  KeyboardEvent();
   return (
     <Routes>
       <Route path="/" element={<BaseOutlet />}>
