@@ -34,7 +34,7 @@ const HeaderContent = () => {
       <HStack as={LinkTo} to={`/${label}`} spacing={1} align="center" h="full" py="2">
         {icon && <Icon boxSize="5" as={icon} color={color} />}
         {label && (
-          <Text display={location.pathname === `/${label}` ? "block" : {base: "none", md: "block" }}>
+          <Text display={location.pathname === `/${label}` ? "block" : {base: "none", lg: "block" }}>
             {label}
             {extension}
           </Text>
