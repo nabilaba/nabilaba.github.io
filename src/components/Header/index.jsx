@@ -2,6 +2,7 @@ import { Flex, HStack, Icon, Text, useColorModeValue } from "@chakra-ui/react";
 import { FaJs, FaReact, FaSass, FaTimes, FaHtml5 } from "react-icons/fa";
 import { Link as LinkTo, useLocation, useNavigate } from "react-router-dom";
 import { VscJson } from "react-icons/vsc";
+import { BsFullscreen } from "react-icons/bs";
 
 const HeaderContent = () => {
   const location = useLocation();
@@ -31,10 +32,23 @@ const HeaderContent = () => {
       _hover={{ color: useColorModeValue("gray.700", "white") }}
       px="4"
     >
-      <HStack as={LinkTo} to={`/${label}`} spacing={1} align="center" h="full" py="2">
+      <HStack
+        as={LinkTo}
+        to={`/${label}`}
+        spacing={1}
+        align="center"
+        h="full"
+        py="2"
+      >
         {icon && <Icon boxSize="5" as={icon} color={color} />}
         {label && (
-          <Text display={location.pathname === `/${label}` ? "block" : {base: "none", lg: "block" }}>
+          <Text
+            display={
+              location.pathname === `/${label}`
+                ? "block"
+                : { base: "none", lg: "block" }
+            }
+          >
             {label}
             {extension}
           </Text>
@@ -63,6 +77,7 @@ const HeaderContent = () => {
       bg={useColorModeValue("white", "gray.900")}
       position="sticky"
       top="0"
+      justifyContent="space-between"
     >
       <HStack spacing={0} h="full">
         <HeaderItem
@@ -94,6 +109,24 @@ const HeaderContent = () => {
           extension=".html"
           label="experiences"
           color="red.500"
+        />
+      </HStack>
+      <HStack spacing={0} h="full" mr={4}>
+        <Icon
+          boxSize="3"
+          as={BsFullscreen}
+          color={useColorModeValue("gray.400", "gray.500")}
+          _hover={{
+            color: useColorModeValue("gray.500", "gray.400"),
+          }}
+          cursor="pointer"
+          onClick={() => {
+            if (document.fullscreenElement) {
+              document.exitFullscreen();
+            } else {
+              document.documentElement.requestFullscreen();
+            }
+          }}
         />
       </HStack>
     </Flex>
