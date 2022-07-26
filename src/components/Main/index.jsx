@@ -4,8 +4,7 @@ import { Outlet } from "react-router-dom";
 
 const MainContent = () => (
   <Flex
-    ml={{ base: 12, md: 12 }}
-    transition=".3s ease"
+    ml={12}
     direction="column"
     h="100vh"
   >
