@@ -4,7 +4,6 @@ import Title from "../../components/Title";
 
 const Home = () => (
   <Stack
-    direction={{ base: "column", sm: "row" }}
     alignItems="center"
     justifyContent="center"
     h="full"
@@ -15,13 +14,14 @@ const Home = () => (
       <Heading fontWeight="normal" color="gray.500" fontSize="xl">
         <Typed
           strings={[
-            "I'm a Frontend Engineering.",
-            "Still learning for Backend Engineering.",
-            "Want to be Fullstack Engineering.",
+            "I'm a Calon Frontend Engineering",
+            "I'm a Android Engineering maybe :D",
+            "Maybe Backend Engineering too :D",
+            "Want to be Fullstack Engineering",
           ]}
           typeSpeed={50}
-          backSpeed={50}
-          backDelay={1000}
+          backSpeed={25}
+          backDelay={1500}
           loop
           smartBackspace
         />
