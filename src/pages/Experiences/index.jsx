@@ -82,7 +82,7 @@ const Experiences = () => (
     <Box color={useColorModeValue("gray.600", "gray.400")}>
       <PagesItem>
         <ListItem>
-          Features Maker and User Experience Designer at AncientOS from May 2022
+          Features Maker and User Experience Designer at AncientOS from May 2021
         </ListItem>
         <Text as={"p"}>
           I have been working on this project for a long time. In this team is
