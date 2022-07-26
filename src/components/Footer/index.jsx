@@ -33,6 +33,7 @@ const FooterContent = () => (
         icon={VscSourceControl}
         label="main*"
         labelTooltip="nabilaba.github.io (Git)"
+        url="https://github.com/nabilaba/nabilaba.github.io"
       />
       <FooterItem icon={VscCloudUpload} />
       <FooterItem
@@ -42,7 +43,11 @@ const FooterContent = () => (
         label2="0"
         labelTooltip="No Problems"
       />
-      <FooterItem label="Git Graph" />
+      <FooterItem
+        label="Git Graph"
+        labelTooltip="View Git Graph"
+        url="https://github.com/nabilaba/nabilaba.github.io/commits/main"
+      />
     </HStack>
     <HStack h="full">
       <FooterItem
@@ -55,9 +60,14 @@ const FooterContent = () => (
   </Flex>
 );
 
-const FooterItem = ({ icon, icon2, label, label2, labelTooltip }) => (
+const FooterItem = ({ icon, icon2, label, label2, labelTooltip, url }) => (
   <Tooltip label={labelTooltip}>
     <HStack
+      onClick={() => {
+        if (url) {
+          window.open(url, "_blank");
+        }
+      }}
       color={useColorModeValue("gray.800", "gray.400")}
       spacing={1}
       align="center"
@@ -66,7 +76,9 @@ const FooterItem = ({ icon, icon2, label, label2, labelTooltip }) => (
       fontSize={".75rem"}
       cursor="pointer"
       w="max-content"
-      _hover={{ bg: useColorModeValue("gray.100", "gray.800") }}
+      _hover={{
+        bg: useColorModeValue("gray.100", "gray.800"),
+      }}
       p={1}
     >
       {icon && <Icon boxSize="4" as={icon} />}
