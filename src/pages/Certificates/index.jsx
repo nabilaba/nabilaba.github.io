@@ -12,7 +12,7 @@ import UserData from "../../utils/UserData";
 
 const Certificates = () => (
   <Stack spacing={5} h="full">
-    <Title title={`skills - Nabil Aba`} />
+    <Title title={`certificates - Nabil Aba`} />
     <Heading color="blue.500" fontSize="xl">
       Dicoding
     </Heading>
