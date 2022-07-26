@@ -8,6 +8,7 @@ import {
   IconButton,
   Divider,
   Link,
+  Tooltip,
 } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { RiFlashlightFill } from "react-icons/ri";
@@ -21,7 +22,6 @@ const SidebarContent = (props) => {
   const navigate = useNavigate();
   const NavItem = (props) => {
     const color = useColorModeValue("gray.600", "gray.300");
-
     const { icon, url } = props;
     return (
       <Flex
@@ -119,23 +119,20 @@ const SidebarContent = (props) => {
             size={"sm"}
             name="Nabil"
             src="https://avatars.githubusercontent.com/u/45154878?v=4"
-            filter="grayscale(100%)"
-            cursor={"pointer"}
-            _hover={{
-              filter: "grayscale(0%)",
-            }}
           />
-          <IconButton
-            mt="4"
-            size={"sm"}
-            onClick={props.toggleColorMode}
-            variant="unstyled"
-            icon={props.colorMode === "light" ? <MoonIcon /> : <SunIcon />}
-            color={useColorModeValue("gray.500", "gray.400")}
-            _hover={{
-              color: useColorModeValue("gray.700", "gray.200"),
-            }}
-          />
+          <Tooltip label={"DarkMode"} placement="right" gutter={0}>
+            <IconButton
+              mt="4"
+              size={"sm"}
+              onClick={props.toggleColorMode}
+              variant="unstyled"
+              icon={props.colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+              color={useColorModeValue("gray.500", "gray.400")}
+              _hover={{
+                color: useColorModeValue("gray.700", "gray.200"),
+              }}
+            />
+          </Tooltip>
         </Flex>
       </VStack>
     </Box>
