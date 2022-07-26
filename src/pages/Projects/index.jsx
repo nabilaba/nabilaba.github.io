@@ -22,7 +22,6 @@ const Projects = () => (
           <ListItem key={index}>
             <Text color={UserData.getStatusColor(project.status)}>
               <Link
-                as="span"
                 target={"_blank"}
                 href={project.url}
                 color={useColorModeValue("gray.600", "gray.400")}
@@ -45,7 +44,6 @@ const Projects = () => (
           <ListItem key={index}>
             <Text color={UserData.getStatusColor(project.status)}>
               <Link
-                as="span"
                 target={"_blank"}
                 href={project.url}
                 color={useColorModeValue("gray.600", "gray.400")}
@@ -68,7 +66,6 @@ const Projects = () => (
           <ListItem key={index}>
             <Text color={UserData.getStatusColor(project.status)}>
               <Link
-                as="span"
                 target={"_blank"}
                 href={project.url}
                 color={useColorModeValue("gray.600", "gray.400")}
