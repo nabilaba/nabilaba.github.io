@@ -78,7 +78,7 @@ const FooterItem = ({ icon, icon2, label, label2, labelTooltip, url }) => (
       role="group"
       h="full"
       fontSize={".75rem"}
-      cursor="pointer"
+      cursor={url ? "pointer" : "default"}
       w="max-content"
       _hover={{
         bg: useColorModeValue("gray.100", "gray.800"),
