@@ -2,11 +2,13 @@ import { Flex, HStack, Icon, Text, useColorModeValue } from "@chakra-ui/react";
 import { FaJs, FaReact, FaSass, FaTimes, FaHtml5 } from "react-icons/fa";
 import { Link as LinkTo, useLocation, useNavigate } from "react-router-dom";
 import { VscJson } from "react-icons/vsc";
-import { BsFullscreen } from "react-icons/bs";
+import { BsFullscreen, BsFullscreenExit } from "react-icons/bs";
+import { useState } from "react";
 
 const HeaderContent = () => {
   const location = useLocation();
   const navigate = useNavigate();
+  const [fullscreen, setFullscreen] = useState(false);
 
   const HeaderItem = ({ icon, label, color, extension }) => (
     <HStack
@@ -114,7 +116,7 @@ const HeaderContent = () => {
       <HStack spacing={0} h="full" mr={4}>
         <Icon
           boxSize="3"
-          as={BsFullscreen}
+          as={fullscreen ? BsFullscreenExit : BsFullscreen}
           color={useColorModeValue("gray.400", "gray.500")}
           _hover={{
             color: useColorModeValue("gray.500", "gray.400"),
@@ -123,8 +125,10 @@ const HeaderContent = () => {
           onClick={() => {
             if (document.fullscreenElement) {
               document.exitFullscreen();
+              setFullscreen(false);
             } else {
               document.documentElement.requestFullscreen();
+              setFullscreen(true);
             }
           }}
         />
