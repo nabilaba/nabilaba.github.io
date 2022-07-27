@@ -59,9 +59,9 @@ const SidebarContent = (props) => {
       pos="fixed"
       top="0"
       left="0"
+      bottom="0"
       pb={25}
       zIndex="1"
-      h="full"
       overflowX="hidden"
       overflowY="auto"
       bg={useColorModeValue("gray.50", "gray.700")}
