@@ -8,7 +8,7 @@ import {
 import { Icon } from "@chakra-ui/react";
 import {
   VscSourceControl,
-  VscCloudUpload,
+  VscRepoForked,
   VscError,
   VscWarning,
   VscSmiley,
@@ -35,7 +35,11 @@ const FooterContent = () => (
         labelTooltip="nabilaba.github.io (Git)"
         url="https://github.com/nabilaba/nabilaba.github.io"
       />
-      <FooterItem icon={VscCloudUpload} />
+      <FooterItem
+        icon={VscRepoForked}
+        labelTooltip="Fork This"
+        url="https://github.com/nabilaba/nabilaba.github.io/fork"
+      />
       <FooterItem
         icon={VscError}
         label="0"
