@@ -45,6 +45,7 @@ const HeaderContent = () => {
         {icon && <Icon boxSize="5" as={icon} color={color} />}
         {label && (
           <Text
+            fontStyle="italic"
             display={
               location.pathname === `/${label}`
                 ? "block"
