@@ -115,12 +115,18 @@ const SidebarContent = (props) => {
           justify="center"
           alignItems="center"
         >
-          <Avatar
-            size={"sm"}
-            name="Nabil"
-            src="https://avatars.githubusercontent.com/u/45154878?v=4"
-          />
-          <Tooltip label={"DarkMode"} placement="right" gutter={0}>
+          <Tooltip label={"Resume"} placement="right">
+            <Avatar
+              size={"sm"}
+              name="Nabil"
+              src="https://avatars.githubusercontent.com/u/45154878?v=4"
+              cursor="pointer"
+              onClick={() => {
+                window.open("/resume.pdf", "_blank");
+              }}
+            />
+          </Tooltip>
+          <Tooltip label={"DarkMode"} placement="right">
             <IconButton
               mt="4"
               size={"sm"}
