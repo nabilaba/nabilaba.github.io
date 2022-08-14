@@ -15,6 +15,11 @@ const ReactJS = [
     status: "Done",
   },
   {
+    name: "FE - Lagu",
+    url: "https://fe-lagu.vercel.app/",
+    status: "Done",
+  },
+  {
     name: "NoSleepHeroku",
     url: "https://nosleepheroku.vercel.app/",
     status: "Done",
