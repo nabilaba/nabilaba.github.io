@@ -62,6 +62,11 @@ const Nolibary = [
     url: "https://nabilaba.github.io/belajar-sass-tema-toko-pakaian/",
     status: "Done",
   },
+  {
+    name: "Tugas 2 - Fake Certificate",
+    url: "https://nabilaba.github.io/tugas2-fake-certificate/",
+    status: "Done",
+  },
 ];
 
 const Others = [
@@ -77,4 +82,17 @@ const Others = [
   },
 ];
 
-export { ReactJS, Nolibary, Others };
+const UsingPHP = [
+  {
+    name: "HelloSchool",
+    url: "http://l200190083pwd.000webhostapp.com/",
+    status: "Done",
+  },
+  {
+    name: "Tugas Praktikum Pemrograman Web",
+    url: "http://l200190083.000webhostapp.com",
+    status: "Done",
+  },
+];
+
+export { ReactJS, Nolibary, UsingPHP, Others };

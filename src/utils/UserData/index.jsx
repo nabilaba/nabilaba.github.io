@@ -1,5 +1,5 @@
 import { Dicoding, GoogleDigitalGarage } from "./sertificates";
-import { ReactJS, Nolibary, Others } from "./projects";
+import { ReactJS, Nolibary, UsingPHP, Others } from "./projects";
 
 const UserData = {
   getSertificates: (mitra) => {
@@ -10,6 +10,7 @@ const UserData = {
   getProjects: (library) => {
     if (library === "reactjs") return ReactJS;
     if (library === "nolibary") return Nolibary;
+    if (library === "usingphp") return UsingPHP;
     return Others;
   },
 

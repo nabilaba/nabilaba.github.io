@@ -58,6 +58,28 @@ const Projects = () => (
     </Stack>
 
     <Heading color="blue.500" fontSize="xl">
+      Using PHP
+    </Heading>
+    <Stack color={useColorModeValue("gray.600", "gray.400")}>
+      <PagesItem>
+        {UserData.getProjects("usingphp").map((project, index) => (
+          <ListItem key={index}>
+            <Text color={UserData.getStatusColor(project.status)}>
+              <Link
+                target={"_blank"}
+                href={project.url}
+                color={useColorModeValue("gray.600", "gray.400")}
+              >
+                {project.name}
+              </Link>{" "}
+              - {project.status}
+            </Text>
+          </ListItem>
+        ))}
+      </PagesItem>
+    </Stack>
+
+    <Heading color="blue.500" fontSize="xl">
       Others
     </Heading>
     <Stack color={useColorModeValue("gray.600", "gray.400")}>
