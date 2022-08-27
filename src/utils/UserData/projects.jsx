@@ -20,6 +20,11 @@ const ReactJS = [
     status: "Done",
   },
   {
+    name: "Landing Page - the hike",
+    url: "https://landingpage-thehike.vercel.app/",
+    status: "Done",
+  },
+  {
     name: "NoSleepHeroku",
     url: "https://nosleepheroku.vercel.app/",
     status: "Done",
