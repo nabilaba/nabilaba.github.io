@@ -5,6 +5,11 @@ const ReactJS = [
     status: "Done",
   },
   {
+    name: "Catatan",
+    url: "https://aplikasicatatan.netlify.app/",
+    status: "Done",
+  },
+  {
     name: "Parentheses Validation",
     url: "https://parentheses-validation.netlify.app/",
     status: "Done",
