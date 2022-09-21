@@ -58,6 +58,11 @@ const Nolibary = [
     status: "Done",
   },
   {
+    name: "Belajar CSS tema Tentang Saya",
+    url: "https://nabilaba.github.io/belajar-css-tema-tentang-saya/",
+    status: "Done",
+  },
+  {
     name: "Belajar Bootstrap tema Lil Peep Music",
     url: "https://nabilaba.github.io/belajar-bootstrap-tema-lilpeep-musics",
     status: "Done",
