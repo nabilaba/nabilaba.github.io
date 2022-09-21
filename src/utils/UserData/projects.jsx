@@ -48,6 +48,11 @@ const ReactJS = [
 
 const Nolibary = [
   {
+    name: "Binar Car Rental",
+    url: "https://bcr.vercel.app/",
+    status: "Done",
+  },
+  {
     name: "Snake Game Advanced",
     url: "https://snake-game-advanced.netlify.app/",
     status: "Done",
