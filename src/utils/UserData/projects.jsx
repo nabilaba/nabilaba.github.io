@@ -34,16 +34,6 @@ const ReactJS = [
     url: "https://nosleepheroku.vercel.app/",
     status: "Done",
   },
-  {
-    name: "Pangkas",
-    url: "https://pangkas.vercel.app/",
-    status: "In Progress",
-  },
-  {
-    name: "Habis Dibagi",
-    url: "https://habis-dibagi.netlify.app/",
-    status: "still bad",
-  },
 ];
 
 const Nolibary = [
