@@ -38,6 +38,11 @@ const ReactJS = [
 
 const Nolibary = [
   {
+    name: "Landing Page - ENDFT",
+    url: "https://endft.vercel.app/",
+    status: "Done",
+  },
+  {
     name: "Landing Page - Binar Car Rental",
     url: "https://bcr.vercel.app/",
     status: "Done",
