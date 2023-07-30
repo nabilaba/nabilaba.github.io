@@ -3,7 +3,11 @@ import { mode } from "@chakra-ui/theme-tools";
 export const styles = {
   global: (props) => ({
     // make transition when changing colorMode
-    "html *": { transition: "color, background-color 200ms linear !important" },
+    "html *": {
+      transitionProperty: "background-color, border-color",
+      transitionDuration: "200ms",
+      transitionTimingFunction: "linear",
+    },
     "::-webkit-scrollbar": {
       width: "14px",
       height: "14px",

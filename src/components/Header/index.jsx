@@ -74,7 +74,8 @@ const HeaderContent = () => {
       as="header"
       align="center"
       w="full"
-      borderColor={useColorModeValue("inherit", "gray.700")}
+      borderBottomWidth="1px"
+      borderColor={useColorModeValue("inherit", "inherit")}
       bg={useColorModeValue("white", "gray.900")}
       position="sticky"
       top="0"

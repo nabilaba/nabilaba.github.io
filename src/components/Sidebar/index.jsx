@@ -32,21 +32,32 @@ const SidebarContent = (props) => {
         px="2"
         py="4"
         cursor="pointer"
-        role="group"
         fontWeight="semibold"
-        transition=".15s ease"
         color={useColorModeValue("gray.500", "gray.400")}
+        position="relative"
+        _after={{
+          content: '""',
+          display: "block",
+          height: "100%",
+          width: "4px",
+          backgroundColor: "red",
+          transform: "scaleX(0)",
+          transformOrigin: "left",
+          transition: "transform 0.3s ease",
+          position: "absolute",
+          left: 0,
+        }}
         _hover={{
-          color: useColorModeValue("gray.700", "gray.200"),
+          color: color,
+          _after: {
+            transform: "scaleX(1)",
+          },
         }}
       >
         {icon && (
           <Icon
             mx="auto"
             boxSize="6"
-            _groupHover={{
-              color: color,
-            }}
             as={icon}
           />
         )}

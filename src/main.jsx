@@ -6,13 +6,14 @@ import { BrowserRouter } from "react-router-dom";
 import { styles } from "./globals";
 import "@fontsource/ubuntu-mono";
 import "./keyframes.css"
+import "@fontsource/poppins"
 
 const theme = extendTheme({
   styles,
   fonts: {
-    body: "Ubuntu Mono, system-ui, sans-serif",
-    heading: "Ubuntu Mono, system-ui, sans-serif",
-    monospace: "Menlo, monospace",
+    body: "Poppins, sans-serif",
+    heading: "Poppins, sans-serif",
+    mono: "Poppins, monospace",
   },
   config: {
     useSystemColorMode: false,
