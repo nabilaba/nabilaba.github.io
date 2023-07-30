@@ -5,6 +5,7 @@ import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import { BrowserRouter } from "react-router-dom";
 import { styles } from "./globals";
 import "@fontsource/ubuntu-mono";
+import "./keyframes.css"
 
 const theme = extendTheme({
   styles,
@@ -16,6 +17,7 @@ const theme = extendTheme({
   config: {
     useSystemColorMode: false,
     initialColorMode: "dark",
+    disableTransitionOnChange: false,
   },
 });
 

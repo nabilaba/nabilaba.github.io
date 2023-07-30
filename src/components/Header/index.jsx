@@ -29,8 +29,6 @@ const HeaderContent = () => {
       fontSize={".75rem"}
       cursor="pointer"
       w="max-content"
-      borderRightWidth={2}
-      borderRightColor={useColorModeValue("gray.50", "gray.800")}
       _hover={{ color: useColorModeValue("gray.700", "white") }}
       px="4"
     >

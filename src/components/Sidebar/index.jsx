@@ -126,19 +126,23 @@ const SidebarContent = (props) => {
               }}
             />
           </Tooltip>
-          <Tooltip label={"DarkMode"} placement="right">
-            <IconButton
-              mt="4"
-              size={"sm"}
-              onClick={props.toggleColorMode}
-              variant="unstyled"
-              icon={props.colorMode === "light" ? <MoonIcon /> : <SunIcon />}
-              color={useColorModeValue("gray.500", "gray.400")}
-              _hover={{
-                color: useColorModeValue("gray.700", "gray.200"),
-              }}
-            />
-          </Tooltip>
+          <IconButton
+            mt="4"
+            size={"sm"}
+            onClick={props.toggleColorMode}
+            variant="unstyled"
+            icon={
+              props.colorMode === "light" ? (
+                <SunIcon animation="rotate 10s linear infinite" />
+              ) : (
+                <MoonIcon animation="scale 1s linear infinite" />
+              )
+            }
+            color={useColorModeValue("gray.500", "gray.400")}
+            _hover={{
+              color: useColorModeValue("gray.700", "gray.200"),
+            }}
+          />
         </Flex>
       </VStack>
     </Box>
