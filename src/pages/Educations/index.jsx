@@ -19,8 +19,8 @@ const Educations = () => (
         <ListItem>Universitas Muhammadiyah Surakarta</ListItem>
         <PagesItem>
           <ListItem>Information Technology</ListItem>
-          <ListItem>2019 - Now</ListItem>
-          <ListItem>IPK : 3.8</ListItem>
+          <ListItem>Nov 2019 - Mar 2023</ListItem>
+          <ListItem>IPK : 3.82</ListItem>
         </PagesItem>
       </PagesItem>
     </Box>
