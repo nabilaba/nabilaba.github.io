@@ -4,7 +4,6 @@ import App from "./App";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import { BrowserRouter } from "react-router-dom";
 import { styles } from "./globals";
-import "@fontsource/ubuntu-mono";
 import "./keyframes.css"
 import "@fontsource/poppins"
 
