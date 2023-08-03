@@ -29,11 +29,6 @@ const ReactJS = [
     url: "https://landingpage-thehike.vercel.app/",
     status: "Done",
   },
-  {
-    name: "NoSleepHeroku",
-    url: "https://nosleepheroku.vercel.app/",
-    status: "Done",
-  },
 ];
 
 const Nolibary = [
