@@ -70,6 +70,7 @@ const SidebarContent = (props) => {
       top="0"
       left="0"
       bottom="0"
+      pb={25}
       zIndex="1"
       overflowX="hidden"
       overflowY="auto"
@@ -137,7 +138,6 @@ const SidebarContent = (props) => {
           </Tooltip>
           <IconButton
             mt="4"
-            mb="25"
             size={"sm"}
             onClick={props.toggleColorMode}
             variant="unstyled"
