@@ -9,6 +9,8 @@ const BaseOutlet = () => {
       as="section"
       bg={useColorModeValue("gray.50", "gray.700")}
       minH="100vh"
+      h="full"
+      w="full"
     >
       <SidebarContent colorMode={colorMode} toggleColorMode={toggleColorMode} />
       <MainContent />
