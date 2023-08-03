@@ -70,7 +70,7 @@ const SidebarContent = (props) => {
       top="0"
       left="0"
       bottom="0"
-      pb={25}
+      mb={25}
       zIndex="1"
       overflowX="hidden"
       overflowY="auto"
