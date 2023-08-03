@@ -12,8 +12,7 @@ import {
 } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { RiFlashlightFill } from "react-icons/ri";
-import { FaTelegramPlane, FaLinkedin } from "react-icons/fa";
-import { GoMarkGithub } from "react-icons/go";
+import { FaTelegramPlane, FaLinkedin, FaGithub } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { TiSocialInstagram } from "react-icons/ti";
 import { useNavigate } from "react-router-dom";
@@ -106,7 +105,7 @@ const SidebarContent = (props) => {
             aria-label="Main Navigation"
           >
             <NavItem icon={FaTelegramPlane} url="https://t.me/nabilaba" />
-            <NavItem icon={GoMarkGithub} url="https://github.com/nabilaba" />
+            <NavItem icon={FaGithub} url="https://github.com/nabilaba" />
             <NavItem
               icon={FaLinkedin}
               url="https://www.linkedin.com/in/nabilaba/"
