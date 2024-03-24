@@ -53,14 +53,15 @@ const Home = () => {
           textAlign="justify"
           color={useColorModeValue("gray.600", "gray.400")}
         >
-          specializing in front end development. Experienced with all stages of
-          the development cycle for dynamic web projects. Well-versed in
-          numerous programming languages including HTML5, JavaScript, ES6, CSS.
-          Also often using{" "}
-          <Text as="span" color="blue.500">
-            MERN (MongoDB, ExpressJs, ReactJs, NodeJs) Development{" "}
-          </Text>
-          .
+          a 22-year-old front-end developer specializing in
+          dynamic web projects. I'm proficient in JavaScript and MERN
+          (MongoDB, Express.js, React.js, Node.js) development for
+          full-stack projects. What excites me most is creating Single
+          Page Applications (SPAs) that offer seamless user
+          experiences. Recently, I've been exploring Android app
+          development using Java to integrate SPAs, focusing on
+          enabling offline functionality for enhanced accessibility and
+          user experience.
         </Text>
       </Stack>
       <Stack>
